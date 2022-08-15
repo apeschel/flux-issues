@@ -1,0 +1,10 @@
+source:
+  kind: ConfigMap
+  name: shared-config
+  fieldpath: data.foo
+targets:
+  - select:
+      kind: ConfigMap
+      name: new-config
+    fieldPaths:
+      - data.foo
