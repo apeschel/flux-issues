@@ -1,0 +1,12 @@
+---
+- source:
+    kind: Secret
+    name: cluster-overrides
+    fieldPath: data.secret
+  targets:
+    - select:
+        kind: Secret
+        name: base
+      fieldPaths:
+        - data.secret
+      create: true

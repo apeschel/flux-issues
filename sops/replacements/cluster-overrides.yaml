@@ -1,0 +1,38 @@
+# SOPS
+apiVersion: v1
+kind: Secret
+metadata:
+    name: cluster-overrides
+data:
+    secret: ENC[AES256_GCM,data:yCmANMjp,iv:6LJf2Uy2TksN6OkXrubU4ZU/irek+Zkr4GBCHyKtzBU=,tag:3OhV0Y+cRGfYiv5PHkRs6g==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2022-08-16T18:29:27Z"
+    mac: ENC[AES256_GCM,data:F6i7+wn9fNfyO/iagHLWT2B88cBnDxtns5sQsoVvP0KOZN855JXHCp/cX7sbwDmC8d123rDrGtAGyr1ttXidFBNklkoHCTFntU+/860ySHIYaU2eQEBbOnCTLvxWytTQWo4tM+FZqchsB11tmzHByCCeMGbk44QT0AoPOXpZ/cU=,iv:sTsHHYqsDEVZAgwkZdRCQhHgsuKWScZjA4Esfd/5paU=,tag:QLD61Hh1dPs27OGdB1dDMA==,type:str]
+    pgp:
+        - created_at: "2022-08-16T18:29:27Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            wcFMAx1Q91gCeyDCAQ/+J2R3CIoa52Cf21zQvCaL7vsTAePQmnnPd3S84b4WEHxx
+            9OwIDe8uayiKpNlLwas6h9HAenTJvB5H5Ja5ka6vwjcFLSzfGPj6sZrYk6BogSbK
+            RHbLTfWDsWtMrn271ukJxSNv2JaXzXSUqcHZVf8ErbWsvlAK2FTr0KjEy31+R+W4
+            bFmOCXPsm49i/SzplSHGcIadg90JlYRfEgTJAWXpb0RFyjAWnCDEbxbJNcXxQ48O
+            Op0NmiyQG2U/KiifkhJok1sK8nT/NBjWJJn34J0GiN9+sGfwaksE08H8Zd0tPuMD
+            9neGuDKMrXVOJgqZK2c/7rSDcdhrw88rRfsHcnQeoDJfC1Hu0AwSaATx4IRFkFr+
+            THNiXQ0h1c0KROjYV318WCSCoD9CeFV+c/VBNFo3BA54Lhj4Ug2Zuks+9VgafO3Y
+            Q6ILlUF5v6F3CRJvVSFxmA9PUnEkb9OFeLwjAYdiDlqaNZKzchpkjLH2hqi+AtBu
+            VK+yDJXLl2bkcm5xrk8vwnntprpo7EPl6yKh8IFh54nf9mcd5g7mlF4lUKOToGQP
+            uT0KncnN1QkHSZ5NsWFuibkKHr9fJfvcN9tT5jBEcpJqR6ubMWan0mmpCwFNE1Rt
+            wda7HL+c2hBV2VlplGtUps2VXtbpmIdqzDTP5CAaapWxuWCrGBbQEt0W6jsruhjS
+            UQEFVu40qwOxe1KNZVjzPCQ+LIG4szLdpXr3qDHB/LmhzsMZ/QEeyMO5bj7wlaYs
+            8l6Pf6P2qOs2LSBINtX94L1Cdc3Qv/Af8OTV94ATMIZOOg==
+            =eH9u
+            -----END PGP MESSAGE-----
+          fp: 1FE72658E6DF441ABE2D3DAD2C9F0782E81F56F7
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3
